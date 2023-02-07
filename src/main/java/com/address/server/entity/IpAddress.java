@@ -20,4 +20,8 @@ public class IpAddress {
     private String ipAddress;
     @Column(name = "time")
     private LocalDateTime time;
+
+    public IpAddress(String ipAddress) {
+        this.ipAddress = ipAddress;
+    }
 }
