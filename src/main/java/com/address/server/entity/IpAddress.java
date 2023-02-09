@@ -11,13 +11,13 @@ import java.time.LocalDateTime;
 @Setter
 @Entity
 @NoArgsConstructor
-@Table(name = "IpAddress")
+@Table(name = "address")
 public class IpAddress {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "ipAddress")
+    @Column(name = "ip_address")
     private String ipAddress;
     @Column(name = "time")
     private LocalDateTime time;

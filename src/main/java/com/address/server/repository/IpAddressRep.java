@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface IpAddressRep extends JpaRepository<IpAddress, Long> {
 
     @Query("select ip from IpAddress ip where ip.ipAddress = ?1")
-    boolean findIpAddressBase(String address);
+    IpAddress findIpAddressBase(String address);
 
 }
